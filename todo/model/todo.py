@@ -1,7 +1,7 @@
 from typing import List, Dict
 
 class Todo:
-    def _init_(self, code_id: int, title: str, description: str) -> None:
+    def __init__(self, code_id: int, title: str, description: str) -> None:
         self.code_id = code_id
         self.title = title
         self.description = description
@@ -15,12 +15,12 @@ class Todo:
         if tag not in self.tags:
             self.tags.append(tag)
 
-    def _str_(self) -> str:
+    def __str__(self) -> str:
         return f"{self.code_id} - {self.title}"
 
 
 class TodoBook:
-    def _init_(self) -> None:
+    def __init__(self) -> None:
         self.todos: Dict[int, Todo] = {}
 
     def add_todo(self, title: str, description: str) -> int:
