@@ -25,5 +25,6 @@ def add_todo(self, title: str, description: str) -> int:
     self.todo [code_id] = todo(code_id, title, description, False)
     return code_id
 
+def pending_todos (self) -> List[todo]:
+    return [todo for todo in self.todo.values() if not todo.completed]
 
-    
