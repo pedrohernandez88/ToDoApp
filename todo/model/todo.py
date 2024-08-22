@@ -15,3 +15,9 @@ def add_tag(self, tag:str):
 
 def _str_(self):
     return f"{self.code_id} - {self.title}"
+
+class TodoBook:
+    def _init_(self):
+        self.todos = Dict[int, todo] = {}
+
+    
