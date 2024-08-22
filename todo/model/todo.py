@@ -20,4 +20,10 @@ class TodoBook:
     def _init_(self):
         self.todos = Dict[int, todo] = {}
 
+def add_todo(self, title: str, description: str) -> int:
+    code_id = len(self.todos) + 1
+    self.todo [code_id] = todo(code_id, title, description, False)
+    return code_id
+
+
     
