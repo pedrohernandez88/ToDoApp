@@ -1,3 +1,4 @@
+from typing import List,Dict
 class todo:
   def __init__(self, code_id: int, title: str, description: str):
         self.code_id = code_id
@@ -28,5 +29,17 @@ def add_todo(self, title: str, description: str) -> int:
 def pending_todos (self) -> List[todo]:
     return [todo for todo in self.todo.values() if not todo.completed]
 
- def completed_todos (self) -> List[todo]:
+def completed_todos (self) -> List[todo]:
     return [todo for todo in self.todos.values() if todo.completed]
+
+def tags_todo_count(self) -> dict:
+    tags_count{}
+    for todo in self.todos.values():
+        for tag in todo.tags:
+            if tag in tag_count:
+                tag_count[tag] += 1
+            else:
+                tag_count[tag = 1]
+    return tag_count
+
+                
